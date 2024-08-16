@@ -27,6 +27,9 @@
 ]{resume} % Use the resume class
 \usepackage[symbol, flushmargin]{footmisc}
 \usepackage{utopia} % Use the EB Garamond font
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[danish]{babel}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -34,6 +37,10 @@
     filecolor=magenta,      
     urlcolor=blue
     }
+\pagestyle{fancy}
+\cfoot{Side \thepage\ af \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
 %------------------------------------------------
 
 \name{Kristian Urup Olesen Larsen} % Your name to appear at the top
@@ -41,7 +48,7 @@
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
 
-\address{(+45) 22 93 02 04 \\ kristianuruplarsen@gmail.com} % Contact information
+\address{kristianuruplarsen@gmail.com \\ (+45) 22 93 02 04 } % Contact information
 \address{Valborg Allé 19, 5.tv. \\ København, Danmark} % Main address
 
 %----------------------------------------------------------------------------------------
@@ -53,14 +60,14 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Uddannelse}
-    \textbf{PhD Polit.}, \textit{Københavns Universitet} \hfill \textit{2019-2023} \\
+    \textbf{PhD i Økonomi}, \textit{Københavns Universitet} \hfill \textit{2019-2023} \\
     Vejledere: Søren Leth-Petersen \& Claus Thustrup Kreiner \\
     Afhandling: \textit{Gender Inequality, Labor Supply and New Structural Methods}
 
-    \textbf{Cand. Polit.}, \textit{Københavns Universitet (Gns. 10.9/12)} \hfill \textit{2018-2021\footnote{Jeg var indskrevet på PhD-skolen på en ``4+4 kontrakt'', hvorfor jeg var både kandidat- og PhD-studerende indtil halvejs igennem PhD-forløbet.}} \\
+    \textbf{Cand.polit.}, \textit{Københavns Universitet (Gns. 10.9/12)} \hfill \textit{2018-2021\footnote{Jeg var indskrevet på PhD-skolen på en ``4+4 kontrakt'', hvorfor jeg var både kandidat- og PhD-studerende indtil halvejs igennem PhD-forløbet.}} \\
     Speciale: \textit{Child Penalties in Labor Returns? Evidence from Linked Survey and Administrative Data}
 
-    \textbf{Ba. Polit.} \textit{Københavns Universitet (Gns. 10.2/12)} \hfill \textit{2014-2017} \\
+    \textbf{Ba.polit.} \textit{Københavns Universitet (Gns. 10.2/12)} \hfill \textit{2014-2017} \\
     Bacheloropgave: \textit{Does Displacement Effects Persist to the Next Generation? Evidence from Danish Childrens Performance in Primary School Exams}
 \end{rSection}
 
@@ -68,18 +75,50 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Relevante Stillinger}
+\begin{rSection}{Erfaring}
+    \begin{rSubsection}{CEBI, Økonomisk Institut, Københavns Universitet}{2023-Present}{Postdoctoral Researcher}{}
+        \item[] Egen empiriske og computationelle forskning, publikation af forskningsprojekter i videnskabelige tidsskrifter.
+    \end{rSubsection}
 
-    \textbf{Københavns Universitet, Økonomisk Institut}\hfill \textit{2023 - Nu} \\
-    Postdoctoral Researcher
+    \begin{rSubsection}{CEBI, Økonomisk Institut, Københavns Universitet}{2019-2023}{PhD Stipendiat}{}
+        \item[] Egen empiriske og computationelle forskning, forskningsprojekt-design, universitetsundervisning, forskningsformidling. Dagligt ansvar for 4-8 forskningsassistenter (studerende.)
+    \end{rSubsection}
 
-    \textbf{Københavns Universitet, Økonomisk Institut}\hfill \textit{2019 - 2023} \\
-    PhD Stipendiat
+    \begin{rSubsection}{CEBI, Økonomisk Institut, Københavns Universitet}{2017-2019}{Forskningsassistent}{}
+        \item[] Empirisk forskningsassistance bestående I analyser på baggrund af Danmarks Statistiks befolkningsregistre, med brug af Stata, SAS og R.
+    \end{rSubsection}
 
-    \textbf{Københavns Universitet, Økonomisk Institut}\hfill \textit{2017 - 2019} \\
-    Forskningsassistent ved \textit{Center for Economic Behavior and Inequality (CEBI)}.
+    %    \textbf{Københavns Universitet, Økonomisk Institut}\hfill \textit{2023 - Nu} \\
+    %    Postdoctoral Researcher
+    %
+    %    \textbf{Københavns Universitet, Økonomisk Institut}\hfill \textit{2019 - 2023} \\
+    %    PhD Stipendiat
+    %
+    %    \textbf{Københavns Universitet, Økonomisk Institut}\hfill \textit{2017 - 2019} \\
+    %    Forskningsassistent ved \textit{Center for Economic Behavior and Inequality (CEBI)}.
 
 \end{rSection}
+
+\begin{rSection}{Undervisningserfaring}
+
+    \textbf{Seminar: Applications of Machine Learning in Economics (MSc)}\hfill \textit{Forår 2021} \\
+    Kursuskoordinator og vejleder, Ka. niveau, Økonomisk Institut.
+
+    \textbf{Social Data Science: Econometrics and Machine Learning}\hfill \textit{Forår 2020} \\
+    Kursusudvikling \& undervisningsassistent, Ka./PhD niveau, SODAS.
+
+    \textbf{Social Data Science}\hfill \textit{August 2019} \\
+    Kursusdrift og undervisningsassistent, Ba./Ka. niveau, SODAS.
+
+    \textbf{Topics in Social Data Science}\hfill \textit{Efterår 2018} \\
+    Undervisningsassistent, Ba./Ka./PhD. niveau, SODAS.
+
+    \textbf{Social Data Science}\hfill \textit{August 2018} \\
+    Undervisningsassistent, Ba./Ka. niveau, SODAS.
+\end{rSection}
+
+
+\newpage
 
 %----------------------------------------------------------------------------------------
 %	Research
@@ -87,8 +126,9 @@
 
 \begin{rSection}{Forskning}
 
-    \textbf{Micro vs Macro Labor Supply Elasticities: The Role of Dynamic Returns to Effort}\hfill \textit{[\href{https://www.nber.org/papers/w31549}{Working Paper}] R\&R AER} \\
-    med Henrik Kleven, Claus Thustrup Kreiner \& Jakob Egholt Søgaard
+    \textbf{Micro vs Macro Labor Supply Elasticities: The Role of Dynamic Returns to Effort}\hfill \textit{[\href{https://www.nber.org/papers/w31549}{Working Paper}]} \\
+    med Henrik Kleven, Claus Thustrup Kreiner \& Jakob Egholt Søgaard \\
+    \textit{R\&R American Economic Review}
 
     \textbf{Couples and Gender Inequality}\hfill \textit{[\href{https://ssrn.com/abstract=4697847}{Working Paper}]} \\
     Solo papir
@@ -98,25 +138,6 @@
 \end{rSection}
 
 
-\begin{rSection}{Undervisning}
-
-    \textbf{Seminar: Applications of Machine Learning in Economics (MSc)}\hfill \textit{Forår 2021} \\
-    Kursuskoordinator og vejleder (med J.K. Rasmussen), valgfag på Ka. niveau
-
-    \textbf{Social Data Science: Econometrics and Machine Learning}\hfill \textit{Forår 2020} \\
-    Kursusudvikling \& undervisningsassistent, valgfag på Ka./PhD. niveau
-
-    \textbf{Social Data Science}\hfill \textit{August 2019} \\
-    Undervisningsassistent, valgfag på Ba./Ka. niveau
-
-    \textbf{Topics in Social Data Science}\hfill \textit{Efterår 2018} \\
-    Undervisningsassistent, valgfag på Ba./Ka./PhD. niveau
-
-    \textbf{Social Data Science}\hfill \textit{August 2018} \\
-    Undervisningsassistent, valgfag på Ba./Ka. niveau
-\end{rSection}
-
-\newpage
 %----------------------------------------------------------------------------------------
 %	Services
 %----------------------------------------------------------------------------------------

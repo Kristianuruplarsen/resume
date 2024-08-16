@@ -28,6 +28,8 @@
 
 \usepackage{utopia} % Use the EB Garamond font
 \usepackage[symbol, flushmargin]{footmisc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -36,6 +38,9 @@
     urlcolor=blue
     }
 
+\pagestyle{fancy}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
 
 %------------------------------------------------
 
@@ -43,9 +48,8 @@
 
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
-
-\address{(+45) 22 93 02 04 \\ kristianuruplarsen@gmail.com} % Contact information
-\address{Valborg Allé 19, 5.tv. \\ Copenhagen, Denmark} % Main address
+\address{kristianuruplarsen@gmail.com \\ (+45) 22 93 02 04 } % Contact information
+\address{Valborg Allé 19, 5.tv., Copenhagen, Denmark} % Main address
 
 %----------------------------------------------------------------------------------------
 
@@ -60,10 +64,10 @@
     Supervisors: Søren Leth-Petersen \& Claus Thustrup Kreiner \\
     Thesis: \textit{Gender Inequality, Labor Supply and New Structural Methods}
 
-    \textbf{MSc in Economics}, GPA 10.9/12, \textit{University of Copenhagen} \hfill \textit{2018-2021\footnote{I enrolled in the PhD program on a ``4+4 contract'', meaning i was enrolled simultaneously in the MSc and PhD for the first half of my PhD studies.}} \\
+    \textbf{MSc in Economics (cand.polit.)}, GPA 10.9/12, \textit{University of Copenhagen} \hfill \textit{2018-2021\footnote{I enrolled in the PhD program on a ``4+4 contract'', meaning i was enrolled simultaneously in the MSc and PhD for the first half of my PhD studies.}} \\
     Thesis: \textit{Child Penalties in Labor Returns? Evidence from Linked Survey and Administrative Data}
 
-    \textbf{BSc in Economics}, GPA 10.2/12, \textit{University of Copenhagen} \hfill \textit{2014-2017} \\
+    \textbf{BSc in Economics (ba.polit.)}, GPA 10.2/12, \textit{University of Copenhagen} \hfill \textit{2014-2017} \\
     Thesis: \textit{Does Displacement Effects Persist to the Next Generation? Evidence from Danish Childrens Performance in Primary School Exams}
 \end{rSection}
 
@@ -71,28 +75,60 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Relevant Positions}
+\begin{rSection}{Experience}
+    \begin{rSubsection}{CEBI, Department of Economics, University of Copenhagen}{2023-Present}{Postdoctoral Researcher}{}
+        \item[] Independent empirical and theoretical research and publication of research projects in scientific journals.
+    \end{rSubsection}
 
-    \textbf{University of Copenhagen (Department of Economics)}\hfill \textit{2023 - Present} \\
-    Postdoctoral Researcher
+    \begin{rSubsection}{CEBI, Department of Economics, University of Copenhagen}{2019-2023}{PhD Stipend}{}
+        \item[] Independent empirical and computational research, research project design, university teaching, research dissemination. Managed day-to-day tasks of 4-8 student research assistants.
+    \end{rSubsection}
 
-    \textbf{University of Copenhagen (Department of Economics)}\hfill \textit{2019 - 2023} \\
-    PhD Stipend
+    \begin{rSubsection}{CEBI, Department of Economics, University of Copenhagen}{2017-2019}{Research Assistant}{}
+        \item[] Empirical research assistance using Stata, SAS, and R to analyze large datasets.
+    \end{rSubsection}
 
-    \textbf{University of Copenhagen (Department of Economics)}\hfill \textit{2017 - 2019} \\
-    Student Research Assistant at Center for Economic Behavior and Inequality (CEBI).
+    %    \textbf{University of Copenhagen (Department of Economics)}\hfill \textit{2023 - Present} \\
+    %    Postdoctoral Researcher
+    %
+    %    \textbf{University of Copenhagen (Department of Economics)}\hfill \textit{2019 - 2023} \\
+    %    PhD Stipend
+    %
+    %    \textbf{University of Copenhagen (Department of Economics)}\hfill \textit{2017 - 2019} \\
+    %    Student Research Assistant at Center for Economic Behavior and Inequality (CEBI).
 
 \end{rSection}
 
 
+\begin{rSection}{Teaching Experience}
+
+    \textbf{Seminar: Applications of Machine Learning in Economics (MSc)}\hfill \textit{Spring 2021} \\
+    Course coordinator and supervisor, economics MSc program, Department of Economics.
+
+    \textbf{Social Data Science: Econometrics and Machine Learning}\hfill \textit{Spring 2020} \\
+    Course development \& teaching assistant, economics MSc/PhD program, SODAS.
+
+    \textbf{Social Data Science}\hfill \textit{August 2019} \\
+    Course management and teaching assistant, economics MSc/BSc program, SODAS.
+
+    \textbf{Topics in Social Data Science}\hfill \textit{Fall 2018} \\
+    Teaching assistant, economics PhD/MSc/BSc program, SODAS.
+
+    \textbf{Social Data Science}\hfill \textit{August 2018} \\
+    Teaching assistant, economics MSc/BSc program, SODAS.
+
+\end{rSection}
+
+\newpage
 %----------------------------------------------------------------------------------------
 %	Research
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Research}
 
-    \textbf{Micro vs Macro Labor Supply Elasticities: The Role of Dynamic Returns to Effort}\hfill \textit{[\href{https://www.nber.org/papers/w31549}{Working Paper}] R\&R AER} \\
-    with Henrik Kleven, Claus Thustrup Kreiner \& Jakob Egholt Søgaard
+    \textbf{Micro vs Macro Labor Supply Elasticities: The Role of Dynamic Returns to Effort}\hfill \textit{[\href{https://www.nber.org/papers/w31549}{Working Paper}]} \\
+    with Henrik Kleven, Claus Thustrup Kreiner \& Jakob Egholt Søgaard \\
+    \textit{R\&R American Economic Review}
 
     \textbf{Couples and Gender Inequality}\hfill \textit{[\href{https://ssrn.com/abstract=4697847}{Working Paper}]} \\
     Solo Paper
@@ -101,27 +137,6 @@
     w. Joachim Kahr Rasmussen, \textit{working paper upon request}
 \end{rSection}
 
-\begin{rSection}{Teaching}
-
-    \textbf{Seminar: Applications of Machine Learning in Economics (MSc)}\hfill \textit{Spring 2021} \\
-    Course coordinator (co w. J.K. Rasmussen) and supervisor, economics MSc program (optional)
-
-    \textbf{Social Data Science: Econometrics and Machine Learning}\hfill \textit{Spring 2020} \\
-    Course development \& teaching assistant, economics MSc/PhD Program (optional)
-
-    \textbf{Social Data Science}\hfill \textit{August 2019} \\
-    Teaching assistant, economics MSc/BSc Program (optional)
-
-    \textbf{Topics in Social Data Science}\hfill \textit{Fall 2018} \\
-    Teaching assistant, economics PhD/MSc/BSc Program (optional)
-
-    \textbf{Social Data Science}\hfill \textit{August 2018} \\
-    Teaching assistant, economics MSc/BSc Program (optional)
-
-\end{rSection}
-
-
-\newpage
 %----------------------------------------------------------------------------------------
 %	Services
 %----------------------------------------------------------------------------------------
