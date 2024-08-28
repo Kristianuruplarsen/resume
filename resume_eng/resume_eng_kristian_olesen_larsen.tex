@@ -23,13 +23,15 @@
 
 \documentclass[
 	%a4paper, % Uncomment for A4 paper size (default is US letter)
-	11pt, % Default font size, can use 10pt, 11pt or 12pt
+	10pt, % Default font size, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
 
 \usepackage{utopia} % Use the EB Garamond font
 \usepackage[symbol, flushmargin]{footmisc}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
+\usepackage{multicol}
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -44,7 +46,7 @@
 
 %------------------------------------------------
 
-\name{Kristian Urup Olesen Larsen} % Your name to appear at the top
+\name{Kristian Grünberg Olesen Larsen} % Your name to appear at the top
 
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
@@ -60,15 +62,15 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-    \textbf{PhD in Economics}, \textit{University of Copenhagen} \hfill \textit{2019-2023} \\
+    \textbf{University of Copenhagen}, \textit{PhD in Economics} \hfill \textit{2019-2023} \\
     Supervisors: Søren Leth-Petersen \& Claus Thustrup Kreiner \\
-    Thesis: \textit{Gender Inequality, Labor Supply and New Structural Methods}
+    Thesis: {Gender Inequality, Labor Supply and New Structural Methods}
 
-    \textbf{MSc in Economics (cand.polit.)}, GPA 10.9/12, \textit{University of Copenhagen} \hfill \textit{2018-2021\footnote{I enrolled in the PhD program on a ``4+4 contract'', meaning i was enrolled simultaneously in the MSc and PhD for the first half of my PhD studies.}} \\
-    Thesis: \textit{Child Penalties in Labor Returns? Evidence from Linked Survey and Administrative Data}
+    \textbf{University of Copenhagen}, \textit{MSc in Economics (cand.polit.), GPA: 10.9/12} \hfill \textit{2018-2021\footnote{I enrolled in the PhD program on a ``4+4 contract'', meaning i was enrolled simultaneously in the MSc and PhD for the first half of my PhD studies.}} \\
+    Thesis: {Child Penalties in Labor Returns? Evidence from Linked Survey and Administrative Data}
 
-    \textbf{BSc in Economics (ba.polit.)}, GPA 10.2/12, \textit{University of Copenhagen} \hfill \textit{2014-2017} \\
-    Thesis: \textit{Does Displacement Effects Persist to the Next Generation? Evidence from Danish Childrens Performance in Primary School Exams}
+    \textbf{University of Copenhagen}, \textit{BSc in Economics (ba.polit.), GPA: 10.2/12} \hfill \textit{2014-2017} \\
+    Thesis: {Does Displacement Effects Persist to the Next Generation? Evidence from Danish Childrens Performance in Primary School Exams}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -81,11 +83,11 @@
     \end{rSubsection}
 
     \begin{rSubsection}{CEBI, Department of Economics, University of Copenhagen}{2019-2023}{PhD Stipend}{}
-        \item[] Independent empirical and computational research, research project design, university teaching, research dissemination. Managed day-to-day tasks of 4-8 student research assistants.
+        \item[] Independent empirical and computational research, research project design, university teaching, research dissemination. I worked extensively with Professor Henrik Kleven from Princeton University through all four years on research in optimal taxation, wrote a solo-author paper in labor economics and conducted computational research leveraging state of the art methods from reinforcement learning. I managed day-to-day tasks of 4-8 student research assistants.
     \end{rSubsection}
 
     \begin{rSubsection}{CEBI, Department of Economics, University of Copenhagen}{2017-2019}{Research Assistant}{}
-        \item[] Empirical research assistance using Stata, SAS, and R to analyze large datasets.
+        \item[] Empirical research assistance using Stata, SAS, and R to analyze large datasets. I primarily worked on health economic projects that have resulted in publications in PNAS and ReStat.
     \end{rSubsection}
 
     %    \textbf{University of Copenhagen (Department of Economics)}\hfill \textit{2023 - Present} \\
@@ -154,14 +156,26 @@
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Various}
+\begin{rSection}{Other}
 
     \begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-        Computer Languages & Python, R, STATA, SAS     \\
-        Spoken Languages   & Fluent danish and english \\
+        Programming      & Daily use of Python, R and Stata. Experienced with SAS and SQL. \\
+        Spoken Languages & Fluent Danish and English.                                      \\
     \end{tabular}
 
 \end{rSection}
+
+
+% \begin{rSection}{References}
+%     Claus Thustrup Kreiner - \textit{Professor, CEBI}    \\
+%     Relation: Supervised me during my PhD studies. \\
+%     Contacts: ctk@econ.ku.dk
+
+%     Andreas Bjerre-Nielsen  - \textit{Associate Professor, SODAS}    \\
+%     Relation: Ran most of the data science courses I co-taught. \\
+%     Contacts: abn@econ.ku.dk
+
+% \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
