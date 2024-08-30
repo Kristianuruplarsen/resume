@@ -27,7 +27,7 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}} % Pass through any options to the base class
 \ProcessOptions\relax % Process given options
 
-\LoadClass{article} % Load the base class
+\LoadClass[a4paper]{article} % Load the base class
 
 %----------------------------------------------------------------------------------------
 %	REQUIRED PACKAGES AND MISC CONFIGURATIONS
